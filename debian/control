@@ -1,0 +1,37 @@
+Source: gitsome
+Section: misc
+Priority: optional
+Maintainer: SZ Lin (林上智) <szlin@cs.nctu.edu.tw>
+Build-Depends: debhelper (>= 9), 
+               python3 (>= 3.4), 
+               dh-python, 
+               python3-mock, 
+               python3-uritemplate,
+               python3-prompt-toolkit,
+               python3-pytest,
+               python3-sphinx (>= 1.0.7+dfsg-1~),
+               python3-pexpect,
+               python3-flake8,
+               python3-ply
+X-Python3-Version: >= 3.4
+Standards-Version: 3.9.8
+Homepage: https://github.com/donnemartin/gitsome
+#Vcs-Git: git://anonscm.debian.org/collab-maint/gitsome.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gitsome.git;a=summary
+
+Package: python-gitsome
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, python3 (>= 3.4)
+Description: Supercharged Git/Shell Autocompleter with GitHub Integration
+ gitsome provides direct integration with GitHub and GitHub Enterprise in 
+ a terminal.
+ It includes not only GitHub integrated commands that work with all
+ shells but also provides following functions.
+ .
+  - Git and GitHub Autocompleter With Interactive Help
+  - Fish-Style Auto-Suggestions
+  - General Autocompleter
+  - Python REPL
+  - Command History
+  - Customizable Highlighting
+ .

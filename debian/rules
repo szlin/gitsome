@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+export PYBUILD_NAME=gitsome
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_clean:
+	dh_clean
+	find -name "gitsome.egg-info" | xargs rm -rf
+	find -name "parser_table.py" | xargs rm -rf 
+	find -name "lastfailed" | xargs rm -rf
