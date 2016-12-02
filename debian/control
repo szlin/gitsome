@@ -2,11 +2,11 @@ Source: gitsome
 Section: misc
 Priority: optional
 Maintainer: SZ Lin (林上智) <szlin@cs.nctu.edu.tw>
-Build-Depends: debhelper (>= 9), 
+Build-Depends: debhelper (>= 10),
                python3 (>= 3.4), 
                dh-python, 
                python3-mock, 
-               python3-uritemplate,
+               python3-sigmavirus24-urltemplate,
                python3-prompt-toolkit,
                python3-pytest,
                python3-sphinx (>= 1.0.7+dfsg-1~),
@@ -16,10 +16,10 @@ Build-Depends: debhelper (>= 9),
 X-Python3-Version: >= 3.4
 Standards-Version: 3.9.8
 Homepage: https://github.com/donnemartin/gitsome
-#Vcs-Git: git://anonscm.debian.org/collab-maint/gitsome.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gitsome.git;a=summary
+Vcs-Git: git://anonscm.debian.org/collab-maint/gitsome.git
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gitsome.git;a=summary
 
-Package: python-gitsome
+Package: gitsome
 Architecture: any
 Depends: ${misc:Depends}, ${python3:Depends}, python3 (>= 3.4)
 Description: Supercharged Git/Shell Autocompleter with GitHub Integration
