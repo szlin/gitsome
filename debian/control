@@ -9,15 +9,16 @@ Build-Depends: debhelper (>= 10),
                python3-sigmavirus24-urltemplate,
                python3-prompt-toolkit,
                python3-pytest,
-               python3-sphinx (>= 1.0.7+dfsg-1~),
+               python3-sphinx,
                python3-pexpect,
                python3-flake8,
+               python-tox,
                python3-ply
 X-Python3-Version: >= 3.4
 Standards-Version: 3.9.8
 Homepage: https://github.com/donnemartin/gitsome
-Vcs-Git: git://anonscm.debian.org/collab-maint/gitsome.git
-Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gitsome.git;a=summary
+Vcs-Git: https://anonscm.debian.org/collab-maint/gitsome.git
+Vcs-Browser: https://anonscm.debian.org/collab-maint/gitsome.git
 
 Package: gitsome
 Architecture: any
