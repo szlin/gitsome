@@ -17,8 +17,8 @@ Build-Depends: debhelper (>= 10),
 X-Python3-Version: >= 3.4
 Standards-Version: 3.9.8
 Homepage: https://github.com/donnemartin/gitsome
-Vcs-Git: https://anonscm.debian.org/collab-maint/gitsome.git
-Vcs-Browser: https://anonscm.debian.org/collab-maint/gitsome.git
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/gitsome.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/gitsome.git
 
 Package: gitsome
 Architecture: any
