@@ -3,9 +3,9 @@ Section: misc
 Priority: optional
 Maintainer: SZ Lin (林上智) <szlin@cs.nctu.edu.tw>
 Build-Depends: debhelper (>= 10),
-               python3 (>= 3.4), 
-               dh-python, 
-               python3-mock, 
+               python3 (>= 3.4),
+               dh-python,
+               python3-mock,
                python3-sigmavirus24-urltemplate,
                python3-prompt-toolkit,
                python3-pytest,
@@ -22,7 +22,14 @@ Vcs-Browser: https://anonscm.debian.org/git/collab-maint/gitsome.git
 
 Package: gitsome
 Architecture: any
-Depends: ${misc:Depends}, ${python3:Depends}, python3 (>= 3.4)
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3 (>= 3.4),
+         python3-click,
+         python3-colorama,
+         python3-docopt,
+         python3-feedparser,
+         python3-numpydoc
 Description: Supercharged Git/Shell Autocompleter with GitHub Integration
  gitsome provides direct integration with GitHub and GitHub Enterprise in 
  a terminal.

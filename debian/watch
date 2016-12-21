@@ -1,3 +1,4 @@
-version=3
-opts=uversionmangle=s/(rc|a|b|c)/~$1/ \
-https://pypi.debian.net/gitsome/gitsome-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%<project>-$1.tar.gz%" \
+   https://github.com/donnemartin/gitsome/releases \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
