@@ -7,6 +7,9 @@ override_dh_install-arch:
 	# remove windows files
 	rm -rf debian/gitsome/usr/bin/gitsome.bat
 	rm -rf debian/gitsome/usr/bin/xonsh.bat
+	# redirect python library
+	sed -i "/import sys/ a sys.path.insert(1,'/usr/lib/python3/dist-packages/python-sigmavirus24-urltemplate/')" \
+	debian/gitsome/usr/bin/gh
 	dh_install --list-missing
 
 override_dh_clean:

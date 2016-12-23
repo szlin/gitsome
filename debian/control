@@ -25,10 +25,16 @@ Architecture: any
 Depends: ${misc:Depends},
          ${python3:Depends},
          python3 (>= 3.4),
+         python3-sigmavirus24-urltemplate,
          python3-click,
          python3-colorama,
          python3-docopt,
          python3-feedparser,
+         python3-ply,
+         python3-prompt-toolkit,
+         python3-requests,
+         python3-pygments,
+         python3-tz,
          python3-numpydoc
 Description: Supercharged Git/Shell Autocompleter with GitHub Integration
  gitsome provides direct integration with GitHub and GitHub Enterprise in 
